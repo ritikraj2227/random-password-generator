@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&family=Poppins:wght@300;400&display=swap");
+:root {
+	--body-background: #865dff;
+	--container-backgroung: #191825;
+	--card-background: #e384ff;
+	--text-color: #fff;
+}
+
+.card-background {
+	background-color: var(--card-background);
+	border-radius: 10px;
+	width: 100%;
+	height: 50px;
+}
+
+.text-color {
+	color: var(--text-color);
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: var(--body-background);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.container {
+	width: 400px;
+	height: 600px;
+	padding: 10px 25px;
+	background-color: var(--container-backgroung);
+	border-radius: 10px;
+	box-shadow: rgba(255, 163, 253, 0.25) 0px 6px 12px -2px, rgba(255, 163, 253, 0.3) 0px 3px 7px -3px;
+	font-family: "Montserrat";
+}
+
+.container h1 {
+	color: var(--text-color);
+  font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.container .display {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 65px;
+	overflow: hidden;
+
+	border-radius: 10px;
+}
+
+.display .password {
+	width: 100%;
+	height: 100%;
+	color: var(--container-backgroung);
+	font-size: 20px;
+	line-height: 65px;
+	padding-left: 10px;
+}
+
+.copy-password img {
+	height: 95%;
+	padding: 10px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.copy-password img:hover {
+	background: var(--container-backgroung);
+	border-radius: 10px;
+	margin: 2px;
+}
+
+.length {
+	margin-top: 15px;
+}
+
+.field-title {
+	font-weight: 800;
+	color: #b3b3b3;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	pointer-events: none;
+	user-select: none;
+}
+
+.field-title span {
+	color: var(--text-color);
+}
+
+.range {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+	justify-content: space-between;
+	color: var(--container-backgroung);
+}
+
+.range p {
+	font-size: 1.3rem;
+}
+
+.range input {
+	height: 3px;
+	width: calc(100% - 50px);
+}
+
+.settings {
+	margin-top: 15px;
+}
+
+.setting {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 10px;
+	color: var(--container-backgroung);
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+
+.setting label{
+	cursor: pointer;
+}
+
+.check-box{
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	appearance: none;
+	width: 50px;
+	height: 30px;
+	background: var(--container-backgroung);
+	border-radius: 50px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+input:checked[type="checkbox"] {
+	background: var(--body-background);
+}
+
+input[type="checkbox"]::after {
+	position: absolute;
+	content: "";
+	width: 24px;
+	height: 24px;
+	top: 3px;
+	left: 3px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::after {
+	left: 46%;
+}
+
+.sub-btn {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 35px;
+	cursor: pointer;
+}
